@@ -1,0 +1,21 @@
+.body-container{
+    background-color: #282c34;   
+    width: 100%;
+    display:flex;
+}
+.user{
+    width: 74%;
+    padding: 25px 10px;
+    color: white; 
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+}
+.user-container{
+    width: 25%;
+    margin: 10px auto;
+    text-align: center;
+   
+}
+

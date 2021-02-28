@@ -1,0 +1,46 @@
+.header{
+    height:150px;
+}
+.top-header{
+    text-align: center;
+    height: 40%;
+    margin: 15px 0px;
+   
+}
+.navbar{
+    height: 55%;
+    background-color:black;
+   
+ 
+}
+.navbar img{
+    height:50px;
+    align-items: left;
+    margin: 10px 25px;
+    padding: 2px;
+    float: left;
+    color: white;
+}
+
+.nav-navbar{
+   width: 30%;
+   float:right;
+   padding: 15px;
+   overflow: hidden;
+   
+}
+.nav-navbar a{
+    text-decoration: none;
+    color:whitesmoke;
+    line-height: 50px;
+    margin: 1%;
+    padding: 1%;
+    font-size:25px;  
+}
+a:hover{  
+    height:50%; 
+    background-color: gray;
+    font-weight: bold;
+    color: gold;
+    
+}
