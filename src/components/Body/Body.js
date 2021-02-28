@@ -21,7 +21,7 @@ const Body = () => {
             <div className="user">
                 {
                     user.map(usr => <Information handleAddUser={handleAddUser} 
-                        usr={usr}></Information>
+                       key={usr.id} usr={usr}></Information>
                     )
                 }
             </div>

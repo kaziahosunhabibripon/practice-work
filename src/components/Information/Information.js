@@ -11,12 +11,12 @@ const Information = (props) => {
                 <img src={company.image} alt="not finding" />
             </div>
             <div className="user-info-right">
-                <h4>< FontAwesomeIcon icon={faBuilding} />{ company.name }</h4>
-                <h4>< FontAwesomeIcon icon={faGlobe} />{ name }</h4>
-                <h4>< FontAwesomeIcon icon={faUser} />{ username }</h4>
-                <p><small>< FontAwesomeIcon icon={faEnvelope} />{ email }</small></p>
-                <p>< FontAwesomeIcon icon={faDollarSign} />{ company.salary }</p>
-                <p> < FontAwesomeIcon icon={faMobile} />{ phone }</p>
+                <h5>< FontAwesomeIcon icon={faBuilding} /> &nbsp;{ company.name }</h5>
+                <h5>< FontAwesomeIcon icon={faGlobe} /> &nbsp;{ name }</h5>
+                <h5>< FontAwesomeIcon icon={faUser} /> &nbsp;{ username }</h5>
+                <p>< FontAwesomeIcon icon={faEnvelope} /> &nbsp;{ email }</p>
+                <p>< FontAwesomeIcon icon={faDollarSign} /> &nbsp;{ company.salary }</p>
+                <p> < FontAwesomeIcon icon={faMobile} /> &nbsp;{ phone }</p>
                 <button onClick={ ()=> props.handleAddUser(props.usr)}>
                     add user < FontAwesomeIcon icon={faPlusSquare} />
                 </button>

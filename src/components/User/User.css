@@ -1,8 +1,38 @@
 .employeer-information{
     width: 90%;
     margin: 5px auto;
-    padding: 2%;
-    box-shadow: px 2px 3px 3px black;
+    padding: 3%;
+    box-shadow: 2px 2px 3px 3px black;
     border-radius: 10px;
     background-color:azure;
+    align-items: space-evenly;
+}
+.salary-information{
+    border-collapse: collapse;
+    width: 100%;
+    margin:15px 0;
+}
+.salary-information tr{
+    background: hsl(0, 0%, 96%);
+}
+.salary-information tr:nth-child(2n) {
+    background: hsl(0, 0%, 96%);
+}
+.salary-information tr td {
+    border: 1px solid hsl(0, 0%, 94%);
+    padding: 8px 10px;
+}
+.Link-btn {
+    text-align: center;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    background: #ff6b36;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }

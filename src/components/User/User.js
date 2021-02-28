@@ -5,7 +5,6 @@ import { faDollarSign, faUser  } from '@fortawesome/free-solid-svg-icons';
 <i class="fab fa-product-hunt"></i>
 const User = (props) => {
     const employee  = props.employee;
-    console.log(employee);
     
     const total = employee.reduce((total, employee)=> total + employee.company.salary, 0);
     
@@ -18,18 +17,50 @@ const User = (props) => {
   
   let tax = ( total /10);
   let yearlySalary = (total- tax) * 12;
-//   const userImage = employee.company.image;
-  
+
     
     
     return (
         <div className="employeer-information">
-             {/* <img src={userImage} alt="not finding" /> */}
-            <h3> < FontAwesomeIcon icon={faUser}/> Employee Name:{employee.name } </h3>
-            <h2>{ employee.length }</h2>
-            <p>< FontAwesomeIcon icon={faDollarSign}/>Total Salary :{ total} </p>
-            <p>< FontAwesomeIcon icon={faDollarSign}/>Taxa Amount :{ tax} </p>
-            <p>< FontAwesomeIcon icon={faDollarSign}/>Yearly Salary: {yearlySalary}</p>   
+            <h3>  Employee Salary Information </h3>
+            
+            <table className="salary-information">
+                <thead>
+                    <tr>
+                        <td>
+                         Employee Count
+                        </td>
+                        <td>
+                        < FontAwesomeIcon icon={faUser}/> &nbsp; { employee.length }
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td>
+                            Salary Amount
+                        </td>
+                        <td>
+                        < FontAwesomeIcon icon={faDollarSign}/> &nbsp; { total}
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>
+                        Tax Amount
+                        </td>
+                        <td>
+                        < FontAwesomeIcon icon={faDollarSign}/> &nbsp;   { tax }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Yearly Salary Amount
+                        </td>
+                        <td>
+                        < FontAwesomeIcon icon={faDollarSign}/> &nbsp;   { yearlySalary}
+                        </td>
+                    </tr>
+                </thead>    
+            </table> 
+            <button className="Link-btn" > Home Page </button>
         </div>
     );
 };
